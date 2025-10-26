@@ -22,9 +22,6 @@ html {
     border: 0;
 }
 
-/* ==========================
-   CABEÇALHO / MENU
-========================== */
 #menu-lista {
     list-style: none;
     display: flex;
@@ -92,9 +89,6 @@ nav a:hover {
     border-radius: 15px;
 }
 
-/* ==========================
-   AREA PRIMEIRO FORM
-========================== */
 #section-area-texto-projetos {
     padding-top: 5.6rem;
     background-color: #fff3d4;
@@ -205,7 +199,6 @@ form {
     border: 2px solid #e6ab0c;
 }
 
-/* FORMULÁRIO CAMPOS */
 #nomecad,
 #cpfcad,
 #telefonecad {
@@ -244,7 +237,7 @@ form {
     max-width: 16.8em;
 }
 
-/* TEXTOS PADRINHO */
+
 #texto-padrinho,
 #texto-padrinho2 {
     width: 100%;
@@ -259,7 +252,6 @@ form {
     max-width: 100%;
 }
 
-/* IMAGENS E DIVISÕES */
 .divisao-img-texto {
     margin-top: 20px;
     display: grid;
@@ -301,9 +293,6 @@ picture {
     transition: background-color 0.3s ease;
 }
 
-/* ==========================
-   RODAPÉ
-========================== */
 #section-footer {
     height: 40vh;
     width: 100%;
@@ -318,7 +307,6 @@ picture {
     grid-template-columns: 1fr 1fr;
 
 }
-
 
 #area-logo-infos {
     width: 100%;
@@ -618,9 +606,6 @@ picture {
         margin: 0 10px;
     }
 
-
-
-
     #espaco-endereco {
         width: 90vw;
         margin: 1rem;
@@ -803,8 +788,6 @@ picture {
         max-width: 55em;
     }
 
-
-
     #espaco-texto-footer {
         width: 90vw;
     }
@@ -831,7 +814,7 @@ picture {
     }
 }
 
-/* 3. TABLETS - 601px até 768px */
+
 @media (min-width: 601px) and (max-width: 768px) {
     nav {
         flex-direction: row;
@@ -921,7 +904,6 @@ picture {
     }
 }
 
-/* 4. NOTEBOOKS - 769px até 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     h1 {
         color: #e4da6b;
@@ -1037,7 +1019,6 @@ picture {
 
 }
 
-/* 5. DESKTOPS - acima de 1025px */
 @media (min-width: 1025px) and (max-width:1600px) {
     #tamanho-img-cadastro1 img {
         width: 600px;

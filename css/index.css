@@ -1,6 +1,3 @@
-/* ==========================
-   ESTILO GERAL
-========================== */
 body {
     font-family: "Montserrat", sans-serif;
     color: #333;
@@ -8,14 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
-/* ==========================
-   CABEÇALHO / MENU
-========================== */
 #menu-lista {
     list-style: none;
     display: flex;
@@ -23,14 +15,11 @@ html {
     margin: 0;
     padding: 0;
 }
-
 #menu-lista li a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
 }
-
-
 .hamburguer {
     background: none;
     border: none;
@@ -38,18 +27,14 @@ html {
     cursor: pointer;
     display: none;
 }
-
 #menu-toggle {
     display: none;
 }
-
-
 #menu-icon {
     display: none;
     font-size: 2em;
     cursor: pointer;
 }
-
 #menu-area {
     background-color: white;
     position: fixed;
@@ -57,44 +42,33 @@ html {
     width: 100%;
     height: 9%;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 #img-logo {
     width: 70px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
 }
-
 nav a {
     text-decoration: none;
     font-size: 15px;
     color: #333;
     margin: 10px;
 }
-
 nav a:hover {
     color: #f6a623;
 }
-
 #money {
     background-color: #f6a623;
     color: white;
     padding: 8px 15px;
     border-radius: 15px;
 }
-
-/* ==========================
-   SEÇÃO INICIAL
-========================== */
-
 .invisivel {
     position: absolute;
     width: 1px;
@@ -106,33 +80,25 @@ nav a:hover {
     white-space: nowrap;
     border: 0;
 }
-
 #section-inicio-area {
     display: flex;
     justify-content: center;
     background-color: #fff3d4;
     padding-top: 87px;
 }
-
 #section-inicio-img img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
-
-/* ==========================
-   AÇÕES
-========================== */
 #section-area-acao {
     text-align: center;
     padding-bottom: 30px;
 
 }
-
 #acao {
     color: #f6a623;
 }
-
 #area-acao {
     display: flex;
     justify-content: center;
@@ -140,7 +106,6 @@ nav a:hover {
     width: 100%;
     height: 100%;
 }
-
 .quadro-acao {
     background-color: white;
     border-radius: 10px;
@@ -149,20 +114,14 @@ nav a:hover {
     width: 250px;
     margin: 10px;
 }
-
 .titulo {
     color: #f6a623;
     margin-bottom: 5px;
 }
-
 .paragrafo {
     color: #555;
     font-size: 14px;
 }
-
-/* ==========================
-   MÉTRICAS / IMPACTO
-========================== */
 #section-area-metrica {
     background-color: #fff3d4;
     text-align: center;
@@ -173,13 +132,11 @@ nav a:hover {
     justify-content: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 #area-impacto {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-
 .metricas {
     background-color: white;
     border-radius: 10px;
@@ -192,28 +149,19 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
 }
-
 .img-metrica {
     width: 90px;
 }
-
 .quantidade {
     font-size: 24px;
     color: #f6a623;
 }
-
-
-
 #section-area-resultado {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-/* ==========================
-   MISSÃO / VISÃO / VALORES
-========================== */
 .invisivel {
     position: absolute;
     width: 1px;
@@ -225,13 +173,11 @@ nav a:hover {
     white-space: nowrap;
     border: 0;
 }
-
 #bloco-area-missão {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
-
 .area-bloco {
     background-color: white;
     border-radius: 10px;
@@ -242,20 +188,14 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .area-bloco h3 {
     color: #f6a623;
     margin-bottom: 10px;
 }
-
 .bi {
     width: 40px;
     height: 40px;
 }
-
-/* ==========================
-   RODAPÉ
-========================== */
 #section-footer {
     height: 40vh;
     width: 100%;
@@ -263,99 +203,79 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     background-color: #fff3d4;
 }
-
 #separador {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
-
-
 #area-logo-infos {
     width: 100%;
     justify-content: center;
     margin-top: 20px;
 }
-
 #img-footer-area {
     width: 50%;
     display: flex;
     justify-content: end;
 }
-
 #logo-footer {
     height: 200px;
     width: 200px;
     border-radius: 20px;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
 }
-
 #texto-area-footer {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 #espaco-texto-footer,
 #espaco-icon-footer {
     width: 55%;
 }
-
-
 #icons-area {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 #icons {
     display: flex;
     padding-bottom: 20px;
 }
-
 .redes-socias-footer,
 .icons-footer {
     padding: 0;
     margin: 6px;
     width: 40px;
     height: 30px;
-
 }
-
 .icons-footer {
     text-decoration: none;
     color: #ffffff;
 }
-
 #background-icons1 {
     background: radial-gradient(circle at 80% 20%, #fdf497 0%, #fd5949 35%, #d6249f 70%, #285AEB 100%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
 }
-
 #background-icons2 {
     background-color: #4767f5;
     border-radius: 10px;
     display: flex;
     justify-content: center;
 }
-
 #background-icons3 {
     background-color: #ff0000;
     border-radius: 10px;
     display: flex;
     justify-content: center;
 }
-
-
-
 #area-contatos {
     width: 100%;
     display: flex;
     margin-top: 20px;
 }
-
 #espaco-endereco {
     width: 100%;
     flex-direction: row;
@@ -363,33 +283,25 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
 }
-
 .informacoes {
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 9fr;
-
 }
-
 .texto-icon {
     display: flex;
     align-items: center;
 
 }
-
 .infos {
     margin-left: 10px;
 }
-
 .icons-area-footer {
     width: 30px;
     height: 30px;
     margin: 10px 0;
 }
 
-/* ==========================
-   RESPONSIVIDADE
-========================== */
 @media (max-width: 375px) {
     .hamburguer {
         display: block;
@@ -447,9 +359,6 @@ nav a:hover {
         margin: 10px;
     }
 
-
-
-
     #section-inicio-area {
         display: flex;
         align-items: center;
@@ -464,12 +373,6 @@ nav a:hover {
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-
-
-
-
-
-
 
     #section-area-acao {
         text-align: center;
@@ -510,19 +413,6 @@ nav a:hover {
         font-size: 14px;
         font-size: 0.8rem;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     #section-area-metrica {
         background-color: #fff3d4;
@@ -566,21 +456,6 @@ nav a:hover {
         font-size: 1.5rem;
         color: #f6a623;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     #bloco-area-missão {
 
         display: flex;
@@ -589,9 +464,6 @@ nav a:hover {
         align-items: center;
         padding: 20px;
     }
-
-
-
 
     .area-bloco {
         background-color: white;
@@ -613,13 +485,6 @@ nav a:hover {
         width: 10vw;
         height: 4vh;
     }
-
-
-
-
-
-
-
 
     #section-footer {
         height: 90vh;
@@ -785,9 +650,6 @@ nav a:hover {
         margin: 10px;
     }
 
-    /* ==========================
-    AÇÕES
-========================== */
 
     #section-area-acao {
         text-align: center;
@@ -826,10 +688,6 @@ nav a:hover {
     }
 
 
-
-    /* ==========================
-   MÉTRICAS / IMPACTO
-========================== */
     #section-area-metrica {
         background-color: #fff3d4;
         text-align: center;
@@ -878,9 +736,6 @@ nav a:hover {
     }
 
 
-    /* ==========================
-   MISSÃO / VISÃO / VALORES
-========================== */
 
     #bloco-area-missão {
         display: flex;
@@ -890,9 +745,6 @@ nav a:hover {
         padding: 2em;
     }
 
-    /* ==========================
-   MISSÃO / VISÃO / VALORES
-========================== */
 
     #section-area-missao {
         text-align: center;
@@ -923,9 +775,7 @@ nav a:hover {
         height: 4vh;
     }
 
-    /* ==========================
-   RODAPÉ
-========================== */
+
     #section-footer {
         height: 70vh;
         width: 100vw;
@@ -1060,9 +910,6 @@ nav a:hover {
         width: 6em;
     }
 
-    /* ==========================
-    AÇÕES
-========================== */
 
     #section-inicio-img {
         padding-top: 1rem;
@@ -1106,9 +953,6 @@ nav a:hover {
 
 
 
-    /* ==========================
-   MÉTRICAS / IMPACTO
-========================== */
     #section-area-metrica {
         background-color: #fff3d4;
         text-align: center;
@@ -1157,9 +1001,6 @@ nav a:hover {
     }
 
 
-    /* ==========================
-   MISSÃO / VISÃO / VALORES
-========================== */
 
     #bloco-area-missão {
         display: flex;
@@ -1169,9 +1010,7 @@ nav a:hover {
         padding: 2em;
     }
 
-    /* ==========================
-   MISSÃO / VISÃO / VALORES
-========================== */
+
 
     #section-area-missao {
         text-align: center;
@@ -1202,9 +1041,6 @@ nav a:hover {
         height: 4vh;
     }
 
-    /* ==========================
-   RODAPÉ
-========================== */
     #section-footer {
         height: 65vh;
         width: 100%;
@@ -1328,9 +1164,6 @@ nav a:hover {
         margin: 10px;
     }
 
-    /* ==========================
-   MÉTRICAS / IMPACTO
-========================== */
     #section-area-metrica {
         background-color: #fff3d4;
         text-align: center;
@@ -1345,20 +1178,12 @@ nav a:hover {
         flex-direction: row;
     }
 
-
-    /* ==========================
-   MISSÃO / VISÃO / VALORES
-========================== */
-
     #bloco-area-missão {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    /* ==========================
-   MISSÃO / VISÃO / VALORES
-========================== */
 
     #section-area-missao {
         text-align: center;
@@ -1379,9 +1204,6 @@ nav a:hover {
         font-size: 1rem;
     }
 
-    /* ==========================
-   RODAPÉ
-========================== */
     #section-footer {
         height: 50vh;
         width: 100%;

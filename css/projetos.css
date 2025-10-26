@@ -10,9 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ==========================
-   CABEÇALHO / MENU
-========================== */
+
 #menu-lista {
     list-style: none;
     display: flex;
@@ -76,13 +74,9 @@ nav a:hover {
     border-radius: 15px;
 }
 
-
-
 #sections-area-projetos-inicio {
     padding-top: 6.4rem;
 }
-
-
 
 .invisivel {
     position: absolute;
@@ -95,8 +89,6 @@ nav a:hover {
     white-space: nowrap;
     border: 0;
 }
-
-
 
 #section-area-texto-projetos,
 #section-area-texto-projetos4 {
@@ -155,9 +147,6 @@ nav a:hover {
     margin: 10px auto;
 }
 
-/* ==========================
-   IMAGEM E TEXTO
-========================== */
 .divisao-img-texto {
     margin-top: 20px;
     display: grid;
@@ -176,9 +165,6 @@ nav a:hover {
     margin-top: 15px;
 }
 
-/* ==========================
-   BOTÃO DE DOAÇÃO
-========================== */
 .area-botao-doacao {
     margin-top: 15px;
     display: flex;
@@ -215,11 +201,6 @@ nav a:hover {
     width: 300px;
     border-radius: 10px;
 }
-
-/* ==========================
-   SECTION DOAÇÃO
-========================== */
-
 
 #section-inicio-doacao {
     display: flex;
@@ -276,9 +257,6 @@ nav a:hover {
 
 }
 
-/* ==========================
-   FORMULÁRIO
-========================== */
 form {
     margin-top: 15px;
 }
@@ -308,7 +286,6 @@ form {
     padding-left: 5px;
 }
 
-
 #espacamento {
     margin-top: 10px;
 }
@@ -316,15 +293,6 @@ form {
 .separados {
     margin-bottom: 10px;
 }
-
-
-
-
-
-
-
-
-
 
 
 #area-botao-doacao {
@@ -724,9 +692,6 @@ form {
         margin: 0 10px;
     }
 
-
-
-
     #espaco-endereco {
         width: 90vw;
         margin: 1rem;
@@ -1121,9 +1086,6 @@ form {
         height: 35vh;
     }
 
-
-
-
     #section-area-texto-projetos3 {
         height: 45vh;
         width: 100%;
@@ -1190,8 +1152,6 @@ form {
         width: 100%;
     }
 
-
-
     #section-footer {
         height: 60vh;
         width: 100vw;
@@ -1210,9 +1170,6 @@ form {
         justify-content: start;
         margin: 0 10px;
     }
-
-
-
 
     #icons-area {
         width: 90%;
