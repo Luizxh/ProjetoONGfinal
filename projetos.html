@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="img/logo.png">
   <title>Projetos</title>
-  <link rel="stylesheet" href="./css/projetos.css">
+  <link rel="stylesheet" href="css/projetos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,12 +18,15 @@
   <header id="menu-area">
     <nav>
       <a href="index.html" id="logo">
-        <picture>
-          <source srcset="../img/logo.webp" type="image/webp">
-          <img src="../img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy" id="img-logo">
-        </picture>
+        <img src="img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy" id="img-logo">
       </a>
-      <ul>
+
+      <!-- Botão hamburguer -->
+      <button id="btn-menu" class="hamburguer" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <ul id="menu-lista">
         <li><a href="index.html" class="links">Início</a></li>
         <li><a href="#sections-area-projetos-inicio" class="links">Projetos</a></li>
         <li><a href="cadastro.html" class="links">Cadastro</a></li>
@@ -31,7 +34,7 @@
     </nav>
   </header>
 
- 
+
   <main>
     <section id="sections-area-projetos-inicio">
       <h1 class="invisivel">area inicial</h1>
@@ -50,8 +53,8 @@
         <div class="divisao-img-texto">
           <div class="area-img-regate">
             <picture>
-              <source srcset="../img/salvamento.webp" type="image/webp">
-              <img src="../img/salvamento.png" alt="Cão e gato sendo resgatados">
+              <source srcset="img/salvamento.webp" type="image/webp">
+              <img src="img/salvamento.png" alt="Cão e gato sendo resgatados">
             </picture>
           </div>
           <div class="texto-center">
@@ -91,7 +94,7 @@
 
           <div class="area-img-regate">
             <picture>
-              <img src="../img/voluntario.png" alt="Pessoa voluntária cuidando de um cão">
+              <img src="img/voluntario.png" alt="Pessoa voluntária cuidando de um cão">
             </picture>
           </div>
         </div>
@@ -113,24 +116,24 @@
         <div class="divisao-img-texto">
           <div class="area-img-regate">
             <picture class="area-img-regate">
-                 <source srcset="../img/padrinhos.webp" type="image/webp">
-                 <source srcset="../img/padrinhos.jpeg" type="image/jpeg">
-                <img src="../img/voluntario.png" alt="Pessoa voluntária cuidando de um cão">
-              </picture>
+              <source srcset="img/padrinhos.webp" type="image/webp">
+              <source srcset="img/padrinhos.jpeg" type="image/jpeg">
+              <img src="img/voluntario.png" alt="Pessoa voluntária cuidando de um cão" id="doacao-cao">
+            </picture>
           </div>
-        <div class="area-botao-doacao">
-          <a href="cadastro.html" class="link-doacao">
-            <div class="botao-body">
-              <p class="texto-botao">Vire um padrinho!</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi-arrow-right-short" viewBox="0 0 16 16" role="img" aria-label="Seta para a direita">
-                <path fill-rule="evenodd"
-                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-              </svg>
-            </div>
-          </a>
+          <div class="area-botao-doacao">
+            <a href="cadastro.html#texto-padrinho" class="link-doacao">
+              <div class="botao-body">
+                <p class="texto-botao">Vire um padrinho!</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi-arrow-right-short" viewBox="0 0 16 16" role="img" aria-label="Seta para a direita">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
 
       </div>
     </section>
@@ -167,9 +170,9 @@
       <div class="area-inicio-doacao-img">
         <div class="img-inicio-doacao">
           <picture>
-            <source srcset="../img/img-doacao1.webp" type="image/webp">
-            <source srcset="../img/img-doacao1.jpeg" type="image/jpeg">
-            <img src="../img/img-doacao1.png" alt="Cachorros em ONG" class="img-inicio-doacao" id="img-cao"
+            <source srcset="img/img-doacao1.webp" type="image/webp">
+            <source srcset="img/img-doacao1.jpeg" type="image/jpeg">
+            <img src="img/img-doacao1.png" alt="Cachorros em ONG" class="img-inicio-doacao" id="img-cao"
               loading="lazy">
           </picture>
         </div>
@@ -182,9 +185,9 @@
     <div id="area-logo-infos">
       <div id="img-footer-area">
         <picture>
-          <source srcset="../img/logo.webp" type="image/webp">
-          <source srcset="../img/logo.jpeg" type="image/jpeg">
-          <img src="../img/logo.png" alt="Logo da ONG Patinhas Felizes" loading="lazy" id="logo-footer">
+          <source srcset="img/logo.webp" type="image/webp">
+          <source srcset="img/logo.jpeg" type="image/jpeg">
+          <img src="img/logo.png" alt="Logo da ONG Patinhas Felizes" loading="lazy" id="logo-footer">
         </picture>
       </div>
       <div id="texto-area-footer">
@@ -262,7 +265,7 @@
               d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z" />
           </svg>
           <div class="texto-icon">
-            <p>E-mail: </p>
+            <p class="email">E-mail: </p>
             <p class="infos">contato@criativatech.com.br</p>
           </div>
         </li>
@@ -280,7 +283,7 @@
       </ul>
     </div>
   </footer>
-
+  <script src="script.js/menuburguer.js"></script>
 </body>
 
 </html>

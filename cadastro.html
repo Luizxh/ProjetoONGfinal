@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../img/logo.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,9 +19,16 @@
 <body>
     <header id="menu-area">
         <nav>
-            <a href="index.html" id="logo"><img src="../img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy"
-                    id="img-logo"></a>
-            <ul>
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy" id="img-logo">
+            </a>
+
+            <!-- Botão hamburguer -->
+            <button id="btn-menu" class="hamburguer" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul id="menu-lista">
                 <li><a href="index.html" class="links">Início</a></li>
                 <li><a href="projetos.html" class="links">Projetos</a></li>
                 <li><a href="#section-area-texto-projetos" class="links">Cadastro</a></li>
@@ -49,21 +58,20 @@
                         <picture id="tamanho-img-cadastro1">
                             <source srcset="img/cadastro1.webp" type="image/webp">
                             <source srcset="img/cadastro1.jpeg" type="image/jpag">
-                            <img src="img/cadastro1.png" alt="cachorrinho">
+                            <img src="img/cadastro1.png" alt="cachorrinho" id="img-cachorro1">
                         </picture>
                     </div>
-                    <form action="cadastro.html" method="post">
+                    <form action="#" method="post" id="form-cadastro" novalidate>
                         <fieldset class="alinhamento-formulario">
                             <legend>Se cadastre</legend>
                             <div class="ladoalado">
                                 <label for="nomecad" class="label-espaco">Nome Completo:*</label>
-                                <input type="text" id="nomecad" name="nome" required minlength="4"
-                                    placeholder="Nome Completo" class="input-espaco">
+                                <input type="text" id="nomecad" name="nome" placeholder="Nome Completo"
+                                    class="input-espaco" required>
 
                                 <label for="cpfcad" class="label-espaco">CPF*</label>
-                                <input type="text" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
-                                    placeholder="000.000.000-00" title="Formato: 000.000.000-00" id="cpfcad"
-                                    class="input-espaco">
+                                <input type="text" placeholder="___.___.___-__" title="Formato: 000.000.000-00"
+                                    id="cpfcad" class="input-espaco" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
                             </div>
 
 
@@ -78,30 +86,34 @@
 
                                 <label for="telefonecad" class="label-espaco">Telefone:*</label>
                                 <input type="tel" id="telefonecad" name="telefone" pattern="[0-9]{11,13}" minlength="11"
-                                    placeholder="DDD 55555-6666" required class="input-espaco">
+                                    placeholder="Telefone" required class="input-espaco">
                             </div>
 
 
                             <label for="enderecocad" class="label-espaco">Endereço:</label>
-                            <input type="text" id="enderecocad" name="endereco" required minlength="4"
-                                placeholder="Endereço" class="input-espaco">
+                            <input type="text" id="enderecocad" name="endereco" required placeholder="Endereço"
+                                class="input-espaco">
 
 
                             <div class="ladoalado">
                                 <label for="cepcad" class="label-espaco">CEP:*</label>
                                 <input type="text" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000"
-                                    title="Formato: 00000-000" maxlength="9" name="cep" id="cepcad"
-                                    class="input-espaco">
+                                    title="Formato: 00000-000" maxlength="9" name="cep" id="cepcad" class="input-espaco"
+                                    required>
+
 
                                 <label for="cidadecad" class="label-espaco">Cidade:*</label>
-                                <input type="text" id="cidadecad" name="cidade" placeholder="Cidade" maxlength="4"
+                                <input type="text" id="cidadecad" name="cidade" placeholder="Cidade"
                                     class="input-espaco">
 
                                 <label for="estadocad" class="label-espaco">Estado:*</label>
-                                <input type="text" id="estadocad" name="estado" placeholder="Estado" maxlength="2"
+                                <input type="text" id="estadocad" name="estado" placeholder="Estado"
                                     class="input-espaco">
                             </div>
 
+                            <div id="container">
+                                <p id="mensagem"></p>
+                            </div>
                             <button type="submit" id="botao-enviar">Enviar</button>
                         </fieldset>
                     </form>
@@ -121,9 +133,10 @@
         </div>
 
         <div class="divisao-img-texto">
-            <form action="#" method="post" id="formulario-projeto-padrinho">
+            <form action="https://formsubmit.co/henriquediaslima09@gmail.com" method="post"
+                id="formulario-projeto-padrinho" novalidate>
                 <fieldset class="alinhamento-formulario2">
-                    <legend id="legenda">Cadastre-se como padrinho</legend>
+                    <legend id="legenda">Cadastre-se como padrinho(a)</legend>
 
                     <label for="nome" class="label-espaco">Nome Completo*</label>
                     <input type="text" id="nome" name="nome" required minlength="4" placeholder="Nome Completo"
@@ -131,7 +144,7 @@
 
                     <label for="cpf" class="label-espaco">CPF*</label>
                     <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
-                        placeholder="000.000.000-00" title="Formato: 000.000.000-00" class="input-espaco" required>
+                        placeholder="___.___.___-__" title="Formato: 000.000.000-00" class="input-espaco" required>
 
                     <label for="email" class="label-espaco">E-mail*</label>
                     <input type="email" id="email" name="email" required placeholder="email@gmail.com"
@@ -147,18 +160,21 @@
                         <div class="separados">
                             <label for="telefone" class="label-espaco">Telefone*</label>
                             <input type="tel" id="telefone" name="telefone" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}"
-                                placeholder="DDD" required class="input-espaco">
+                                required class="input-espaco" placeholder="(00) 00000-0000">
                         </div>
+                    </div>
+                    <div id="container2">
+                        <p id="mensagem2"></p>
                     </div>
                     <button type="submit" id="botao-enviar-segundo">Enviar</button>
                 </fieldset>
-
             </form>
+
 
             <section id="section-area-imagem">
                 <h2 class="invisivel">area imagem</h2>
                 <picture>
-                    <img src="img/cadastro.png" alt="imagens de cachorrinhos">
+                    <img src="img/cadastro.png" alt="imagens de cachorrinhos" id="img-cachorro">
                 </picture>
             </section>
 
@@ -167,11 +183,8 @@
         <div id="texto-padrinho2">
             <div id="texto-padrinho-espaco2">
                 <p class="texto-padrinho">
-                    Ser padrinho ou madrinha é um gesto de amor que muda vidas.
-                    Com sua ajuda, conseguimos garantir cuidados médicos, alimentação e abrigo para cães resgatados,
-                    até que encontrem um lar definitivo.
-                    Se você acredita que amor e compaixão fazem a diferença, cadastre-se abaixo e torne-se um padrinho
-                    de patas!
+                    Um gesto simples pode salvar uma vida.
+                    Doe, apadrinhe e espalhe amor por quem mais precisa.
                 </p>
             </div>
         </div>
@@ -181,11 +194,12 @@
 
         <div id="area-logo-infos">
             <div id="img-footer-area">
-                <img src="../img/logo.png" alt="logo da ong" id="logo-footer">
+                <img src="img/logo.png" alt="logo da ong" id="logo-footer">
             </div>
             <div id="texto-area-footer">
                 <div id="espaco-texto-footer">
-                    <p>Nós somos o Amigo Fiel, uma organização dedicada a mudar a vida dos cachorros que mais precisam.
+                    <p>Nós somos o patinhas felizes, uma organização dedicada a mudar a vida dos cachorros que mais
+                        precisam.
                     </p>
                 </div>
             </div>
@@ -274,7 +288,11 @@
             </ul>
         </div>
     </footer>
-    <script src="cadastro.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="./script.js/menuburguer.js"></script>
+    <script src="./script.js/formulariocadastro.js"></script>
+    <script src="./script.js/formulariopadrinho.js"></script>
 </body>
 
 </html>

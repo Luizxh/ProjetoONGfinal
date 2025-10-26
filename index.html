@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../img/logo.png">
     <title>Patinhas Felizes</title>
-    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,14 +17,16 @@
 <body>
     <header id="menu-area">
         <nav>
-            <a href="#section-inicio-area" id="logo">
-                <picture>
-                    <source srcset="../img/logo.webp" type="image/webp">
-                    <source srcset="../img/logo.jpeg" type="image/jpeg">
-                    <img src="../img/logo.png" alt="Logo da ONG Patinhas Felizes" loading="lazy" id="img-logo">
-                </picture>
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy" id="img-logo">
             </a>
-            <ul>
+
+            <!-- Botão hamburguer -->
+            <button id="btn-menu" class="hamburguer" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul id="menu-lista">
                 <li><a href="#section-inicio-area" class="links">Início</a></li>
                 <li><a href="projetos.html" class="links">Projetos</a></li>
                 <li><a href="cadastro.html" class="links">Cadastro</a></li>
@@ -36,7 +38,7 @@
         <section id="section-inicio-area">
             <h1 class="invisivel">imagem de inicio</h1>
             <div id="section-inicio-img">
-                <img src="../img/body.png" alt="familia feliz com seus pets">
+                <img src="img/body.png" alt="familia feliz com seus pets">
             </div>
         </section>
 
@@ -78,7 +80,7 @@
                 <article class="metricas">
                     <h2 class="invisivel">abrigados</h2>
                     <div class="area-img-metrica">
-                        <img src="../img/animal-shelter.png" alt="Icone de abrigos de animais" class="img-metrica">
+                        <img src="img/animal-shelter.png" alt="Icone de abrigos de animais" class="img-metrica">
                     </div>
                     <strong class="quantidade">1 500+</strong>
                     <p class="texto-impacto">Cães Resgatados</p>
@@ -88,7 +90,7 @@
                 <article class="metricas">
                     <h2 class="invisivel">vacinados</h2>
                     <div class="area-img-metrica">
-                        <img src="../img/veterinary.png" alt="Icone de vacinação de pets" class="img-metrica">
+                        <img src="img/veterinary.png" alt="Icone de vacinação de pets" class="img-metrica">
                     </div>
                     <strong class="quantidade">2 500+</strong>
                     <p class="texto-impacto">Vacinas Aplicadas</p>
@@ -98,7 +100,7 @@
                 <article class="metricas">
                     <h2 class="invisivel">tratados</h2>
                     <div class="area-img-metrica">
-                        <img src="../img/stethoscope.png" alt="Icone de tratamentos veterinarios" class="img-metrica">
+                        <img src="img/stethoscope.png" alt="Icone de tratamentos veterinarios" class="img-metrica">
                     </div>
                     <strong class="quantidade">2 000+</strong>
                     <p class="texto-impacto">Consultas Veterinárias</p>
@@ -172,9 +174,9 @@
         <div id="area-logo-infos">
             <div id="img-footer-area">
                 <picture>
-                    <source srcset="../img/logo.webp" type="image/webp">
-                    <source srcset="../img/logo.jpeg" type="image/jpeg">
-                    <img src="../img/logo.png" alt="Logo da ONG Patinhas Felizes" loading="lazy" id="logo-footer">
+                    <source srcset="img/logo.webp" type="image/webp">
+                    <source srcset="img/logo.jpeg" type="image/jpeg">
+                    <img src="img/body.png" alt="Logo da ONG Patinhas Felizes" loading="lazy" id="logo-footer">
                 </picture>
             </div>
             <div id="texto-area-footer">
@@ -270,6 +272,7 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js/menuburguer.js"></script>
 </body>
 
 </html>
