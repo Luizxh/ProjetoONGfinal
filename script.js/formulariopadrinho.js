@@ -67,37 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('formPadrinho', JSON.stringify(dadosFormPadr));
             console.log(" Dados salvos localmente:", dadosFormPadr);
 
-             emailjs.init({
-                    publicKey: "pFy1a_NAJS1ApryAR"
-                });
-    
-                const nome = document.getElementById('nome').value;
-                const email = document.getElementById('email').value;
-    
-                const dados = {
-                    name: nome,
-                    email: email,
-                    subject: "Confirmação de apadrinhamento 🐾",
-                    mensagem: `Olá ${nome}, Você acaba de se tornar um(a) padrinho(a)! 💖 
-                    Muito obrigado por apoiar nossa causa e ajudar os nossos peludinhos 🐶🐾
-    
-                        Com carinho,
-                        Equipe Patinhas Felizes 🧡`
-                };
-    
-                console.log("📨 Dados enviados:", dados);
-                const serviceId = "service_n998xdj";
-                const templateID = "template_yrtut6c";
-                console.log(dados);
-                emailjs.send(serviceId, templateID, dados)
-                    .then(() => {
-                        console.log("Email enviado com sucesso!");
-                    })
-                    .catch((error) => {
-                        console.log("Erro ao enviar: " + error.text);
-                    });
-
-
             container.innerHTML = `
             <div style="text-align: center; padding: 2rem;">
             <h2 style="color: green;">Formulário enviado com sucesso!</h2>
