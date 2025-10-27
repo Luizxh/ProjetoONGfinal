@@ -487,7 +487,7 @@ picture {
 
     #menu-lista.mostrar {
         display: flex;
-        /* mostra quando clicado */
+    
     }
 
     #menu-area {
@@ -1064,5 +1064,45 @@ picture {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1A1A1A;
+        color: #f0f0f0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+        background-color: #70706f;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-area {
+        background-color: #5e5a5a;
+    }
+
+    #menu-lista li a {
+        color: #f0f0f0;
+    }
+
+    #menu-lista li a:hover {
+        color: #da8b16;
+    }
+
+    a {
+        color: #ADD8E6;
+    }
+
+    #section-area-texto-projetos{
+        background-color: #1A1A1A;
+    }
+    input{
+        background-color: #464545;
+    }
+
+    #section-footer {
+        background-color: #000;
+        color: #d651b5;
     }
 }

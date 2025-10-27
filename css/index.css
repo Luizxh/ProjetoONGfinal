@@ -303,7 +303,7 @@ nav a:hover {
 }
 
 @media (max-width: 375px) {
-    .hamburguer {
+   .hamburguer {
         display: block;
     }
 
@@ -311,7 +311,7 @@ nav a:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: rgb(255, 196, 0);
+        background-color: rgb(255, 196, 0);
         position: absolute;
         top: 60px;
         left: 0;
@@ -330,6 +330,44 @@ nav a:hover {
         padding: 10px 0;
     }
 
+    #menu-lista {
+        display: none;
+
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+    }
+
+    #menu-lista li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+    #menu-lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+    
+    }
+
     #menu-area {
         background-color: white;
         position: fixed;
@@ -344,7 +382,7 @@ nav a:hover {
     }
 
     #img-logo {
-        width: 5em;
+        width: 4em;
     }
 
     nav ul {
@@ -356,8 +394,8 @@ nav a:hover {
         text-decoration: none;
         font-size: 0.8rem;
         color: #333;
-        margin: 10px;
     }
+
 
     #section-inicio-area {
         display: flex;
@@ -1343,5 +1381,63 @@ nav a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: #fff3d4;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1A1A1A;
+        color: #f0f0f0;
+    }
+    #menu-lista.mostrar {
+        display: flex;
+        background-color: #70706f;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-area {
+        background-color: #5e5a5a;
+    }
+
+    #menu-lista li a {
+        color: #f0f0f0;
+    }
+
+    #menu-lista li a:hover {
+        color: #da8b16;
+    }
+
+    #section-area-acao,
+    #section-inicio-area,
+    #section-area-missao {
+        background-color: #1A1A1A;
+    }
+
+    #acao,
+    #impacto {
+        color: #EBEBEB;
+    }
+
+    .quadro-acao,
+    .metricas,
+    .area-bloco {
+        background-color: #414040;
+        box-shadow: 5px 5px 5px rgba(99, 98, 98, 0.87);
+    }
+
+    .paragrafo {
+        color: #AFAFAF;
+    }
+
+    #section-area-metrica,
+    #section-footer {
+        background-color: #2C2C2C;
+    }
+    a {
+        color: #ADD8E6;
+    }
+
+    footer {
+        background-color: #000;
+        color: #d651b5;
     }
 }

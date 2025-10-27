@@ -475,7 +475,7 @@ form {
 
 
 @media (max-width: 375px) {
-    .hamburguer {
+   .hamburguer {
         display: block;
     }
 
@@ -483,7 +483,7 @@ form {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: rgb(255, 196, 0);
+        background-color: rgb(255, 196, 0);
         position: absolute;
         top: 60px;
         left: 0;
@@ -500,8 +500,44 @@ form {
     #menu-lista li {
         text-align: center;
         padding: 10px 0;
+    }
+
+    #menu-lista {
+        display: none;
+
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #menu-lista.mostrar {
         display: flex;
-        justify-content: end;
+    }
+
+    #menu-lista li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+    #menu-lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+    
     }
 
     #menu-area {
@@ -518,7 +554,7 @@ form {
     }
 
     #img-logo {
-        width: 5em;
+        width: 4em;
     }
 
     nav ul {
@@ -869,9 +905,10 @@ form {
         height: 20vh;
         width: 25vw;
     }
-    #section-area-texto-projetos3 .area-img-regate  img{
-        width:90%;
-        margin-right:10px;
+
+    #section-area-texto-projetos3 .area-img-regate img {
+        width: 90%;
+        margin-right: 10px;
     }
 
 
@@ -987,7 +1024,7 @@ form {
         height: 10vh;
     }
 
- nav {
+    nav {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -1494,5 +1531,52 @@ form {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1A1A1A;
+        color: #f0f0f0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+        background-color: #70706f;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-area {
+        background-color: #5e5a5a;
+    }
+
+    #menu-lista li a {
+        color: #f0f0f0;
+    }
+
+    #menu-lista li a:hover {
+        color: #da8b16;
+    }
+
+    a {
+        color: #ADD8E6;
+    }
+
+    #section-area-texto-projetos,
+    #section-area-texto-projetos3 {
+        background-color: #1A1A1A;
+    }
+
+    #section-area-texto-projetos2,
+    #section-inicio-doacao {
+        background-color: #2e2e2e;
+    }
+    .texto-subt-doacao{
+        color:#8A8A8A ;
+    }
+
+    footer {
+        background-color: #000;
+        color: #d651b5;
     }
 }
