@@ -1,0 +1,1177 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.invisivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+#menu-lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-lista li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.hamburguer {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-area {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img-logo {
+    width: 70px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #f6a623;
+}
+
+#money {
+    background-color: #f6a623;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+#section-area-texto-projetos {
+    padding-top: 5.6rem;
+    background-color: #fff3d4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e4da6b;
+}
+
+#section-area-texto-projetos form {
+    margin-bottom: 10px;
+}
+
+#definicao-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#area-titulo-projeto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-introducao {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#tamanho-img-cadastro1 img,
+picture {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.alinhamento-formulario {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 90%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#legenda {
+    font-weight: bold;
+}
+
+.label-espaco {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.input-espaco {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin: 5px;
+    padding-left: 5px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#espacamento {
+    margin-top: 10px;
+}
+
+.separados {
+    margin-bottom: 10px;
+}
+
+.ladoalado {
+    display: flex;
+    gap: 10px;
+}
+
+#botao-enviar {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 150px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fdf497;
+    border: 2px solid #fcb902;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#botao-enviar:hover {
+    background-color: #f5e967;
+    border: 2px solid #e6ab0c;
+}
+
+#nomecad,
+#cpfcad,
+#telefonecad {
+    width: 100%;
+    max-width: 23em;
+}
+
+#emailcad,
+#enderecocad {
+    width: 100%;
+    max-width: 61em;
+}
+
+#nascimentocad {
+    width: 100%;
+    max-width: 18em;
+}
+
+#cepcad,
+#cidadecad,
+#estadocad {
+    width: 100%;
+    max-width: 15em;
+}
+
+#nome,
+#cpf,
+#email {
+    width: 100%;
+    max-width: 35em;
+}
+
+#idade,
+#telefone {
+    width: 100%;
+    max-width: 16.8em;
+}
+
+
+#texto-padrinho,
+#texto-padrinho2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#texto-padrinho-espaco,
+#texto-padrinho-espaco2 {
+    width: 60%;
+    max-width: 100%;
+}
+
+.divisao-img-texto {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#section-area-imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#section-area-imagem img,
+picture {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.alinhamento-formulario2 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#botao-enviar-segundo {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 150px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fdf497;
+    border: 2px solid #fcb902;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#section-footer {
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff3d4;
+
+}
+
+#separador {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#area-logo-infos {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#img-footer-area {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+#logo-footer {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+#texto-area-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#espaco-texto-footer,
+#espaco-icon-footer {
+    width: 55%;
+}
+
+
+#icons-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#icons {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.redes-socias-footer,
+.icons-footer {
+    padding: 0;
+    margin: 6px;
+    width: 40px;
+    height: 30px;
+
+}
+
+.icons-footer {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#background-icons1 {
+    background: radial-gradient(circle at 80% 20%, #fdf497 0%, #fd5949 35%, #d6249f 70%, #285AEB 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#background-icons2 {
+    background-color: #4767f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#background-icons3 {
+    background-color: #ff0000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#area-contatos {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#espaco-endereco {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacoes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 9fr;
+
+}
+
+.texto-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.infos {
+    margin-left: 10px;
+}
+
+.icons-area-footer {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+@media (max-width: 375px) {
+    .hamburguer {
+        display: block;
+    }
+
+    #menu-lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(255, 196, 0);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+        background-color: #fff3d4;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-lista li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #menu-lista {
+        display: none;
+
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+    }
+
+    #menu-lista li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+    #menu-lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+    
+    }
+
+    #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #img-logo {
+        width: 4em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #333;
+    }
+
+    #definicao-area,
+    .divisao-img-texto,
+    #section-footer {
+        grid-template-columns: 1fr;
+    }
+
+    #tamanho-img-cadastro1 img {
+        width: 230px;
+    }
+
+    .alinhamento-formulario,
+    .alinhamento-formulario2 {
+        width: 95%;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mensagem {
+        font-size: 0.7rem;
+    }
+
+    #emailcad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #cidadecad,
+    #estadocad,
+    #telefonecad,
+    #nomecad,
+    #cpfcad {
+        width: 100%;
+        padding: 10px;
+        max-width: 55em;
+    }
+
+
+    #botao-enviar,
+    #botao-enviar-segundo {
+        width: 70%;
+    }
+
+    #texto-padrinho-espaco,
+    #texto-padrinho-espaco2 {
+        width: 90%;
+    }
+
+    #logo-footer {
+        width: 130px;
+        height: 130px;
+    }
+
+    #section-footer {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-footer-area {
+        width: 90vw;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+    #logo-footer {
+        height: 10vh;
+        width: 25vw;
+        border-radius: 1em;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+
+    #texto-area-footer #espaco-texto-footer {
+        width: 90%;
+    }
+
+
+    #icons-area {
+        width: 90%;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+    #espaco-endereco {
+        width: 90vw;
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+    .texto-icon {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+    }
+
+    .icons-area-footer {
+        display: none;
+    }
+}
+
+
+@media (min-width: 376px) and (max-width: 600px) {
+    .hamburguer {
+        display: block;
+    }
+
+    #menu-lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff3d4;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-lista li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #img-logo {
+        width: 5em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #333;
+    }
+
+    h1 {
+        color: #e4da6b;
+    }
+
+    #definicao-area,
+    .divisao-img-texto {
+        display: flex;
+        flex-direction: column;
+    }
+    #tamanho-imagem-espaco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tamanho-img-cadastro1 img,
+    #section-area-imagem img,
+    picture {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .alinhamento-formulario,
+    .alinhamento-formulario2 {
+        width: 95%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+
+    #botao-enviar,
+    #botao-enviar-segundo {
+        width: 80%;
+        max-width: 150px;
+    }
+
+    #texto-padrinho-espaco,
+    #texto-padrinho-espaco2 {
+        width: 90%;
+    }
+
+    #section-footer {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #area-logo-infos {
+        width: 87vw;
+        margin-top: 1em;
+    }
+
+    #img-footer-area {
+        width: 90vw;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+    #logo-footer {
+        height: 15vh;
+        width: 29vw;
+        border-radius: 1em;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #texto-area-footer {
+        width: 90vw;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+
+
+    #icons-area {
+        width: 90%;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mensagem {
+        font-size: 0.9rem;
+    }
+
+    #emailcad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #cidadecad,
+    #estadocad,
+    #telefonecad,
+    #nomecad,
+    #cpfcad {
+        width: 100%;
+        padding: 10px;
+        max-width: 55em;
+    }
+
+    #espaco-texto-footer {
+        width: 90vw;
+    }
+
+    #espaco-endereco {
+        width: 90vw;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .texto-icon {
+        display: flex;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .infos {
+        width: 80%;
+        margin: 0;
+    }
+
+    .icons-area-footer {
+        display: none;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 15px;
+        margin: 5px 10px;
+    }
+
+    #img-logo {
+        width: 6em;
+    }
+
+    h1 {
+        color: #e4da6b;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #emailcad,
+    #telefonecad,
+    #cpfcad,
+    #nomecad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #cidadecad,
+    #estadocad {
+        width: 100%;
+        max-width: 55em;
+    }
+
+    #definicao-area,
+    .divisao-img-texto {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    
+
+    #tamanho-img-cadastro1 img,
+    #section-area-imagem img,
+    picture {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .alinhamento-formulario,
+    .alinhamento-formulario2 {
+
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .separados {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botao-enviar,
+    #botao-enviar-segundo {
+        width: 60%;
+        max-width: 180px;
+    }
+
+    #texto-padrinho-espaco,
+    #texto-padrinho-espaco2 {
+        width: 80%;
+    }
+
+    #logo-footer {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+   #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    #img-logo {
+        width: 4em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #333;
+        margin: 10px;
+    }
+    h1 {
+        color: #e4da6b;
+    }
+    #section-area-texto-projetos{
+        padding-top: 8rem;
+    }
+
+    #definicao-area,
+    .divisao-img-texto {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: left;
+    }
+
+    #tamanho-img-cadastro1 img,
+    #section-area-imagem img,
+    picture {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alinhamento-formulario,
+    .alinhamento-formulario2 {
+        width: 85%;
+        max-width: 100%;
+    }
+
+    #botao-enviar,
+    #botao-enviar-segundo {
+        width: 40%;
+        max-width: 200px;
+    }
+
+    #texto-padrinho-espaco,
+    #texto-padrinho-espaco2 {
+        width: 70%;
+    }
+
+    #logo-footer {
+        width: 180px;
+        height: 180px;
+    }
+
+    #emailcad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #cidadecad,
+    #estadocad,
+    #idade,
+    #telefone {
+        width: 100%;
+        max-width: 55em;
+    }
+
+    #section-footer {
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff3d4;
+    }
+
+    #separador {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    #area-logo-infos {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #img-footer-area {
+        width: 65%;
+        display: flex;
+        justify-content: end;
+    }
+
+    #logo-footer {
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #texto-area-footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #espaco-texto-footer,
+    #espaco-icon-footer {
+        width: 55%;
+    }
+
+
+    #icons-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #icons {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .redes-socias-footer,
+    .icons-footer {
+        padding: 0;
+        margin: 6px;
+        width: 40px;
+        height: 30px;
+
+    }
+
+    .icons-footer {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    #area-contatos {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    #espaco-endereco {
+        width: 100%;
+        padding: 0;
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icons-area-footer {
+        width: 5vw;
+        margin: 10px 0;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width:1600px) {
+    #tamanho-img-cadastro1 img {
+        width: 600px;
+    }
+
+    h1 {
+        color: #e4da6b;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alinhamento-formulario,
+    .alinhamento-formulario2 {
+        width: 85%;
+        max-width: 100%;
+    }
+
+    #emailcad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #cidadecad,
+    #estadocad,
+    #telefonecad,
+    #nomecad,
+    #cpfcad {
+        width: 100%;
+        padding: 10px;
+        max-width: 55em;
+    }
+
+    #idade,
+    #telefone {
+        width: 100%;
+        max-width: 16.8em;
+    }
+    #section-footer {
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1A1A1A;
+        color: #f0f0f0;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+        background-color: #70706f;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-area {
+        background-color: #5e5a5a;
+    }
+
+    #menu-lista li a {
+        color: #f0f0f0;
+    }
+
+    #menu-lista li a:hover {
+        color: #da8b16;
+    }
+
+    a {
+        color: #ADD8E6;
+    }
+
+    #section-area-texto-projetos{
+        background-color: #1A1A1A;
+    }
+    input{
+        background-color: #464545;
+    }
+
+    #section-footer {
+        background-color: #000;
+        color: #d651b5;
+    }
+}

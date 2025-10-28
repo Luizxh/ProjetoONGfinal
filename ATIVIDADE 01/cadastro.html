@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="menu-area">
+        <nav>
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy" id="img-logo">
+            </a>
+
+            <!-- Botão hamburguer -->
+            <button id="btn-menu" class="hamburguer" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul id="menu-lista">
+                <li><a href="index.html" class="links">Início</a></li>
+                <li><a href="projetos.html" class="links">Projetos</a></li>
+                <li><a href="#section-area-texto-projetos" class="links">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section-area-texto-projetos">
+            <div class="definicao-area">
+                <div id="area-titulo-projeto">
+                    <h1>
+                        Venha fazer parte dos nossos projetos
+                    </h1>
+                </div>
+                <div id="elemento-traco"></div>
+                <div class="divisao-img-texto">
+                    <div id="tamanho-imagem-espaco">
+                        <p class="texto-introducao">
+                            Faça parte da família patas felizes e ajude-nos a transformar a vida de cães e gatos
+                            em situação de vulnerabilidade.
+                            Ao se cadastrar, você pode participar de nossos projetos sociais.
+                            Cada cadastro representa mais uma esperança de um lar e uma vida melhor para nossos amigos
+                            de
+                            quatro
+                            patas.
+                        </p>
+                        <picture id="tamanho-img-cadastro1">
+                            <source srcset="img/cadastro1.webp" type="image/webp">
+                            <source srcset="img/cadastro1.jpeg" type="image/jpag">
+                            <img src="img/cadastro1.png" alt="cachorrinho" id="img-cachorro1">
+                        </picture>
+                    </div>
+                    <form action="#" method="post" id="form-cadastro" novalidate>
+                        <fieldset class="alinhamento-formulario">
+                            <legend>Se cadastre</legend>
+                            <div class="ladoalado">
+                                <label for="nomecad" class="label-espaco">Nome Completo:*</label>
+                                <input type="text" id="nomecad" name="nome" placeholder="Nome Completo"
+                                    class="input-espaco" required>
+
+                                <label for="cpfcad" class="label-espaco">CPF*</label>
+                                <input type="text" placeholder="___.___.___-__" title="Formato: 000.000.000-00"
+                                    id="cpfcad" class="input-espaco" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                            </div>
+
+
+                            <label for="emailcad" class="label-espaco">E-mail:*</label>
+                            <input type="email" id="emailcad" name="email" required placeholder="E-mail@gmail.com"
+                                class="input-espaco">
+
+
+                            <div class="ladoalado">
+                                <label for="nascimentocad" class="label-espaco">Data de Nascimento:*</label>
+                                <input type="date" id="nascimentocad" name="nascimento" required class="input-espaco">
+
+                                <label for="telefonecad" class="label-espaco">Telefone:*</label>
+                                <input type="tel" id="telefonecad" name="telefone" pattern="[0-9]{11,13}" minlength="11"
+                                    placeholder="Telefone" required class="input-espaco">
+                            </div>
+
+
+                            <label for="enderecocad" class="label-espaco">Endereço:</label>
+                            <input type="text" id="enderecocad" name="endereco" required placeholder="Endereço"
+                                class="input-espaco">
+
+
+                            <div class="ladoalado">
+                                <label for="cepcad" class="label-espaco">CEP:*</label>
+                                <input type="text" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000"
+                                    title="Formato: 00000-000" maxlength="9" name="cep" id="cepcad" class="input-espaco"
+                                    required>
+
+
+                                <label for="cidadecad" class="label-espaco">Cidade:*</label>
+                                <input type="text" id="cidadecad" name="cidade" placeholder="Cidade"
+                                    class="input-espaco">
+
+                                <label for="estadocad" class="label-espaco">Estado:*</label>
+                                <input type="text" id="estadocad" name="estado" placeholder="Estado"
+                                    class="input-espaco">
+                            </div>
+
+                            <div id="container">
+                                <p id="mensagem"></p>
+                            </div>
+                            <button type="submit" id="botao-enviar">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div id="texto-padrinho">
+            <div id="texto-padrinho-espaco">
+                <p class="texto-padrinho">
+                    Ser padrinho ou madrinha é um gesto de amor que muda vidas.
+                    Com sua ajuda, conseguimos garantir cuidados médicos, alimentação e abrigo para cães resgatados,
+                    até que encontrem um lar definitivo.
+                    Se você acredita que amor e compaixão fazem a diferença, cadastre-se abaixo e torne-se um padrinho
+                    de patas!
+                </p>
+            </div>
+        </div>
+
+        <div class="divisao-img-texto">
+            <form action="https://formsubmit.co/henriquediaslima09@gmail.com" method="post"
+                id="formulario-projeto-padrinho" novalidate>
+                <fieldset class="alinhamento-formulario2">
+                    <legend id="legenda">Cadastre-se como padrinho(a)</legend>
+
+                    <label for="nome" class="label-espaco">Nome Completo*</label>
+                    <input type="text" id="nome" name="nome" required minlength="4" placeholder="Nome Completo"
+                        class="input-espaco">
+
+                    <label for="cpf" class="label-espaco">CPF*</label>
+                    <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                        placeholder="___.___.___-__" title="Formato: 000.000.000-00" class="input-espaco" required>
+
+                    <label for="email" class="label-espaco">E-mail*</label>
+                    <input type="email" id="email" name="email" required placeholder="email@gmail.com"
+                        class="input-espaco">
+
+                    <div class="ladoalado">
+                        <div class="separados">
+                            <label for="idade" class="label-espaco">Idade*</label>
+                            <input type="number" id="idade" name="idade" min="18" max="120" required placeholder="Idade"
+                                class="input-espaco">
+                        </div>
+
+                        <div class="separados">
+                            <label for="telefone" class="label-espaco">Telefone*</label>
+                            <input type="tel" id="telefone" name="telefone" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}"
+                                required class="input-espaco" placeholder="(00) 00000-0000">
+                        </div>
+                    </div>
+                    <div id="container2">
+                        <p id="mensagem2"></p>
+                    </div>
+                    <button type="submit" id="botao-enviar-segundo">Enviar</button>
+                </fieldset>
+            </form>
+
+
+            <section id="section-area-imagem">
+                <h2 class="invisivel">area imagem</h2>
+                <picture>
+                    <img src="img/cadastro.png" alt="imagens de cachorrinhos" id="img-cachorro">
+                </picture>
+            </section>
+
+        </div>
+
+        <div id="texto-padrinho2">
+            <div id="texto-padrinho-espaco2">
+                <p class="texto-padrinho">
+                    Um gesto simples pode salvar uma vida.
+                    Doe, apadrinhe e espalhe amor por quem mais precisa.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="section-footer">
+
+        <div id="area-logo-infos">
+            <div id="img-footer-area">
+                <img src="img/logo.png" alt="logo da ong" id="logo-footer">
+            </div>
+            <div id="texto-area-footer">
+                <div id="espaco-texto-footer">
+                    <p>Nós somos o patinhas felizes, uma organização dedicada a mudar a vida dos cachorros que mais
+                        precisam.
+                    </p>
+                </div>
+            </div>
+            <div id="icons-area">
+                <div id="espaco-icon-footer">
+                    <div id="icons">
+                        <a href="https://www.instagram.com/" class="icons-footer">
+                            <div id="background-icons1" class="background-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="redes-socias-footer" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/?locale=pt_BR" class="icons-footer">
+                            <div id="background-icons2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="redes-socias-footer" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/" class="icons-footer">
+                            <div id="background-icons3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="redes-socias-footer" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="area-contatos">
+            <ul id="espaco-endereco">
+                <li class="informacoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="icons-area-footer" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                    </svg>
+                    <div class="texto-icon">
+                        <p>Endereço:</p>
+                        <p class="infos">Avenida das Inovações, 1500, Sala 801</p>
+                    </div>
+                </li>
+                <li class="informacoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="icons-area-footer" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    <div class="texto-icon">
+                        <p>Telefone: </p>
+                        <p class="infos">(11) 5555-1234</p>
+                    </div>
+                </li>
+                <li class="informacoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="icons-area-footer" viewBox="0 0 16 16">
+                        <path
+                            d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z" />
+                    </svg>
+                    <div class="texto-icon">
+                        <p>E-mail: </p>
+                        <p class="infos">contato@criativatech.com.br</p>
+                    </div>
+                </li>
+                <li class="informacoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="icons-area-footer" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                    </svg>
+                    <div class="texto-icon">
+                        <p>Horario de Funcionamento: </p>
+                        <p class="infos">Segunda a Sexta-feira: das 9h00 às 18h00</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="./script.js/menuburguer.js"></script>
+    <script src="./script.js/formulariocadastro.js"></script>
+    <script src="./script.js/formulariopadrinho.js"></script>
+</body>
+
+</html>
