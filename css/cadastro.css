@@ -905,8 +905,42 @@ picture {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+   #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    #img-logo {
+        width: 4em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #333;
+        margin: 10px;
+    }
     h1 {
         color: #e4da6b;
+    }
+    #section-area-texto-projetos{
+        padding-top: 8rem;
     }
 
     #definicao-area,
@@ -963,58 +997,94 @@ picture {
     }
 
     #section-footer {
-        height: 70vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff3d4;
     }
 
+    #separador {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
     #area-logo-infos {
-        width: 87vw;
-        margin-top: 1em;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     #img-footer-area {
-        width: 90vw;
+        width: 65%;
         display: flex;
-        justify-content: start;
-        margin: 0 10px;
+        justify-content: end;
     }
 
-    #icons-area {
-        width: 90%;
+    #logo-footer {
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #texto-area-footer {
+        width: 100%;
         display: flex;
-        justify-content: start;
-        margin: 0 10px;
+        justify-content: center;
+    }
+
+    #espaco-texto-footer,
+    #espaco-icon-footer {
+        width: 55%;
+    }
+
+
+    #icons-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #icons {
+        display: flex;
+        padding-bottom: 20px;
     }
 
     .redes-socias-footer,
     .icons-footer {
         padding: 0;
         margin: 6px;
-        width: 9vw;
-        height: 6vh;
+        width: 40px;
+        height: 30px;
 
     }
 
-    #espaco-texto-footer {
-        width: 90vw;
+    .icons-footer {
+        text-decoration: none;
+        color: #ffffff;
     }
 
-    #espaco-texto-footer p {
-        font-size: 1.2rem;
-    }
-
-
-    .texto-icon {
+    #area-contatos {
+        width: 100%;
         display: flex;
-        align-items: center;
-        width: 95vw;
-        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    #espaco-endereco {
+        width: 100%;
+        padding: 0;
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .icons-area-footer {
-        display: none;
+        width: 5vw;
+        margin: 10px 0;
     }
 
 }

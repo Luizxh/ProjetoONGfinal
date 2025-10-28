@@ -1177,11 +1177,13 @@ nav a:hover {
         top: 0;
         width: 100vw;
         height: 10vh;
+        display: flex;
+        justify-content: center;
     }
 
     nav {
-        display: grid;
-        grid-template-columns: 0.1fr 0.6fr;
+        display: flex;
+        justify-content: space-around;
         width: 100vw;
     }
 
@@ -1201,6 +1203,9 @@ nav a:hover {
         margin: 10px;
     }
 
+    #section-inicio-area{
+       padding-top: 8em; 
+    }
     #section-area-metrica {
         background-color: #fff3d4;
         text-align: center;
